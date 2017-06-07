@@ -1,62 +1,10 @@
 Pod::Spec.new do |s|
   s.name = "SwifterSwift"
-  s.version = "1.6.4"
-  s.summary = "A handy collection of more than 500 native Swift 3 extensions to boost your productivity."
-  s.description = <<-DESC
-  SwifterSwift is a collection of over 500 native Swift 3 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS.
+  s.version = "4.0.0"
+  s.summary = "A handy collection of more than 500 native Swift extensions to boost your productivity."
+  s.description = ""
 
-  List Of Extensions
-    - Array extensions
-    - Bool extensions
-    - Character extensions
-    - Collection extensions
-    - Data extensions
-    - Date extensions
-    - Dictionary extensions
-    - Double extensions
-    - Float extensions
-    - Int extensions
-    - Locale extensions
-    - Optional extensions
-    - String extensions
-    - URL extensions
-    - SwifterSwift
-
-  List of UIKit Extensions
-    - UIAlertController extensions
-    - UIBarButtonItem extensions
-    - UIButton extensions
-    - UICollectionView extensions
-    - UIColor extensions
-    - UIImage extensions
-    - UIImageView extensions
-    - UILabel extensions
-    - UINavigationBar extensions
-    - UINavigationController extensions
-    - UINavigationItem extensions
-    - UISearchBar extensions
-    - UISegmentedControl extensions
-    - UISlider extensions
-    - UISwitch extensions
-    - UITabBar extensions
-    - UITableView extensions
-    - UITextField extensions
-    - UITextView extensions
-    - UIView extensions
-    - UIViewController extensions
-
-  List of Cocoa Extensions
-    - CGColor extensions
-    - CGFloat extensions
-    - CGPoint extensions
-    - CGSize extensions
-    - CLLocation extensions
-    - NSAttributedString extensions
-    - NSColor extensions
-
-                   DESC
-
-  s.homepage = "https://github.com/SwifterSwift/SwifterSwift"
+  s.homepage = "https://swifterswift.com"
   s.license = { type: 'MIT', file: 'LICENSE' }
   s.authors = { "Omar Albeik" => 'omaralbeik@gmail.com' }
   s.social_media_url = "http://twitter.com/omaralbeik"
@@ -71,7 +19,7 @@ Pod::Spec.new do |s|
   s.source = { git: "https://github.com/SwifterSwift/SwifterSwift.git", tag: "#{s.version}" }
   s.source_files = "Source/**/*.swift"
   s.pod_target_xcconfig = {
-    'SWIFT_VERSION' => '3.0',
+    'SWIFT_VERSION' => '4.0',
   }
   s.documentation_url = 'https://github.com/SwifterSwift/SwifterSwiftDocs'
 end
