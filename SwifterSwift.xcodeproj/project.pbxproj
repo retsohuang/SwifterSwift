@@ -273,20 +273,20 @@
 		0781D1161EE83043004F2527 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				079FFE581EE88E68002C3C8A /* ArrayExtensions.swift */,
 				079FFE5C1EE88E68002C3C8A /* BoolExtensions.swift */,
 				079FFE561EE88E68002C3C8A /* CharacterExtensions.swift */,
-				079FFE5A1EE88E68002C3C8A /* CollectionExtensions.swift */,
 				079FFE5D1EE88E68002C3C8A /* DataExtensions.swift */,
+				079FFE511EE88E68002C3C8A /* FloatingPointExtensions.swift */,
+				079FFE571EE88E68002C3C8A /* FloatExtensions.swift */,
+				079FFE591EE88E68002C3C8A /* LocaleExtensions.swift */,
+				079FFE531EE88E68002C3C8A /* DoubleExtensions.swift */,
+				079FFE5B1EE88E68002C3C8A /* URLExtensions.swift */,
+				079FFE581EE88E68002C3C8A /* ArrayExtensions.swift */,
+				079FFE5A1EE88E68002C3C8A /* CollectionExtensions.swift */,
 				079FFE5E1EE88E68002C3C8A /* DateExtensions.swift */,
 				079FFE521EE88E68002C3C8A /* DictionaryExtensions.swift */,
-				079FFE531EE88E68002C3C8A /* DoubleExtensions.swift */,
-				079FFE571EE88E68002C3C8A /* FloatExtensions.swift */,
-				079FFE511EE88E68002C3C8A /* FloatingPointExtensions.swift */,
-				079FFE591EE88E68002C3C8A /* LocaleExtensions.swift */,
 				079FFE541EE88E68002C3C8A /* OptionalExtensions.swift */,
 				079FFE551EE88E68002C3C8A /* StringExtensions.swift */,
-				079FFE5B1EE88E68002C3C8A /* URLExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
