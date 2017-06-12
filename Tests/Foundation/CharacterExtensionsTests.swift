@@ -34,19 +34,19 @@ class CharacterExtensionsTests: XCTestCase {
 		XCTAssertFalse(Character("s").isNumber)
 	}
 	
-	func testIsLetter() {
-		XCTAssertTrue(Character("a").isLetter)
-		XCTAssertTrue(Character("B").isLetter)
-		XCTAssertFalse(Character("3").isLetter)
-		XCTAssertFalse(Character("-").isLetter)
-	}
-	
-	func testIsWhiteSpace() {
-		XCTAssertTrue(Character(" ").isWhiteSpace)
-		XCTAssertFalse(Character("-").isWhiteSpace)
-		
-	}
-	
+    func testIsLetter() {
+        XCTAssertTrue(Character("a").isLetter)
+        XCTAssertTrue(Character("B").isLetter)
+        XCTAssertFalse(Character("3").isLetter)
+        XCTAssertFalse(Character("-").isLetter)
+    }
+    
+    func testIsWhiteSpace() {
+        XCTAssertTrue(Character(" ").isWhiteSpace)
+        XCTAssertFalse(Character("-").isWhiteSpace)
+
+    }
+    
 	func testInt() {
 		XCTAssertNotNil(Character("1").int)
 		XCTAssertEqual(Character("1").int!, 1)
@@ -67,12 +67,12 @@ class CharacterExtensionsTests: XCTestCase {
 		XCTAssertFalse(Character("S").isLowercased)
 	}
 	
-	func testUppercased() {
-		XCTAssertEqual(Character("s").uppercased, Character("S"))
-	}
-	
-	func testLowercased() {
-		XCTAssertEqual(Character("S").lowercased, Character("s"))
-		
-	}
+    func testUppercased() {
+        XCTAssertEqual(Character("s").uppercased, Character("S"))
+    }
+    
+    func testLowercased() {
+        XCTAssertEqual(Character("S").lowercased, Character("s"))
+
+    }
 }

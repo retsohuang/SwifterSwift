@@ -7,10 +7,8 @@
 //
 
 import Foundation
-#if os(macOS)
-	import Cocoa
-#elseif os(iOS) || os(tvOS) || os(watchOS)
-	import UIKit
+#if !os(Linux)
+	import CoreGraphics
 #endif
 
 
@@ -21,6 +19,13 @@ public extension Double {
 	public var float: Float {
 		return Float(self)
 	}
+	
+	#if !os(Linux)
+	/// SwifterSwift: CGFloat.
+	public var cgFloat: CGFloat {
+		return CGFloat(self)
+	}
+	#endif
 	
 }
 

@@ -7,11 +7,6 @@
 //
 
 import Foundation
-#if os(macOS)
-	import Cocoa
-#elseif os(iOS) || os(tvOS) || os(watchOS)
-	import UIKit
-#endif
 
 
 // MARK: - Properties
@@ -57,12 +52,7 @@ public extension FloatingPoint {
 	
 	/// SwifterSwift: Int.
 	public var int: Int {
-		return Int(self as! NSNumber)
-	}
-	
-	/// SwifterSwift: CGFloat.
-	public var cgFloat: CGFloat {
-		return CGFloat(self as! NSNumber)
+		return Int(self)
 	}
 	
 	/// SwifterSwift: String.

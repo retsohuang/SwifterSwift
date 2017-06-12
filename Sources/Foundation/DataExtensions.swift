@@ -7,23 +7,29 @@
 //
 
 import Foundation
+#if !os(Linux)
 #if os(macOS)
 	import Cocoa
-#elseif os(iOS) || os(tvOS) || os(watchOS)
+	#else
 	import UIKit
+#endif
 #endif
 
 
 // MARK: - Properties
 public extension Data {
 	
+	#if !os(Linux)
 	/// SwifterSwift: NSAttributedString from Data (if applicable).
 	public var attributedString: NSAttributedString? {
 		// http://stackoverflow.com/questions/39248092/nsattributedstring-extension-in-swift-3
-		return try? NSAttributedString(data: self, options: [
-			NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType,
-			NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue], documentAttributes: nil)
+		let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+			NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html,
+			NSAttributedString.DocumentReadingOptionKey.characterEncoding: String.Encoding.utf8
+		]
+		return try? NSAttributedString(data: self, options: options, documentAttributes: nil)
 	}
+	#endif
 	
 	/// SwifterSwift: Return data as an array of bytes.
 	public var bytes: [UInt8] {

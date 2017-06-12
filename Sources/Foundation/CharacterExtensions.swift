@@ -30,15 +30,14 @@ public extension Character {
 	
 	/// SwifterSwift: Check if character is number.
 	public var isNumber: Bool {
-		return Int(String(self)) != nil
+		return String(self).rangeOfCharacter(from: .decimalDigits, options: .literal, range: nil) != nil
 	}
 	
-	/// SwifterSwift: Check if character is a letter.
-	public var isLetter: Bool {
-		return String(self).rangeOfCharacter(from: .letters, options: .numeric,
-		                                     range: nil) != nil
-	}
-	
+    /// SwifterSwift: Check if character is a letter.
+    public var isLetter: Bool {
+		return String(self).rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
+    }
+    
 	/// SwifterSwift: Check if character is uppercased.
 	public var isUppercased: Bool {
 		return String(self) == String(self).uppercased()
@@ -49,11 +48,11 @@ public extension Character {
 		return String(self) == String(self).lowercased()
 	}
 	
-	/// SwifterSwift: Check if character is white space.
-	public var isWhiteSpace: Bool {
-		return String(self) == " "
-	}
-	
+    /// SwifterSwift: Check if character is white space.
+    public var isWhiteSpace: Bool {
+        return String(self) == " "
+    }
+    
 	/// SwifterSwift: Integer from character (if applicable).
 	public var int: Int? {
 		return Int(String(self))
@@ -64,16 +63,16 @@ public extension Character {
 		return String(self)
 	}
 	
-	/// SwifterSwift: Return the character lowercased.
-	public var lowercased: Character {
-		return String(self).lowercased().characters.first!
-	}
-	
-	/// SwifterSwift: Return the character uppercased.
-	public var uppercased: Character {
-		return String(self).uppercased().characters.first!
-	}
-	
+    /// SwifterSwift: Return the character lowercased.
+    public var lowercased: Character {
+        return String(self).lowercased().characters.first!
+    }
+    
+    /// SwifterSwift: Return the character uppercased.
+    public var uppercased: Character {
+        return String(self).uppercased().characters.first!
+    }
+    
 }
 
 

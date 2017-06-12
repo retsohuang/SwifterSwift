@@ -2,17 +2,20 @@
 //  SwifterSwift.h
 //  SwifterSwift
 //
-//  Created by Omar Albeik on 07/10/2016.
-//  Copyright © 2016 Omar Albeik. All rights reserved.
+//  Created by Omar Albeik on 6/12/17.
 //
 
-
+#import <Foundation/Foundation.h>
 #import "TargetConditionals.h"
+
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
-#else
+#elif TARGET_OS_MAC
 #import <Cocoa/Cocoa.h>
+#elif TARGET_OS_WATCH
+#import <WatchKit/WatchKit.h>
 #endif
+
 
 //! Project version number for SwifterSwift.
 FOUNDATION_EXPORT double SwifterSwiftVersionNumber;
