@@ -28,6 +28,10 @@
 		076A9D311EEF47F700EF258A /* CharacterExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A9D2A1EEF47F000EF258A /* CharacterExtensionsTests.swift */; };
 		076A9D321EEF47F700EF258A /* DataExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A9D291EEF47F000EF258A /* DataExtensionsTests.swift */; };
 		076A9D331EEF47F700EF258A /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076A9D281EEF47F000EF258A /* IntExtensionsTests.swift */; };
+		07927A041EF2905100B3C47C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764EDE01EF28EEE000859DE /* StringExtensions.swift */; };
+		07927A051EF2905100B3C47C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764EDE01EF28EEE000859DE /* StringExtensions.swift */; };
+		07927A061EF2905200B3C47C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764EDE01EF28EEE000859DE /* StringExtensions.swift */; };
+		07927A071EF2905200B3C47C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0764EDE01EF28EEE000859DE /* StringExtensions.swift */; };
 		079CCA231EEEF2990057BE54 /* BoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CCA0E1EEEF2930057BE54 /* BoolExtensions.swift */; };
 		079CCA241EEEF2990057BE54 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CCA0F1EEEF2930057BE54 /* DateExtensions.swift */; };
 		079CCA251EEEF2990057BE54 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CCA101EEEF2930057BE54 /* DoubleExtensions.swift */; };
@@ -114,6 +118,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0764EDE01EF28EEE000859DE /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		076A9D161EEF420800EF258A /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
 		076A9D171EEF420800EF258A /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		076A9D181EEF420800EF258A /* CharacterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterExtensions.swift; sourceTree = "<group>"; };
@@ -240,6 +245,7 @@
 		079CCA0D1EEEF2930057BE54 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				0764EDE01EF28EEE000859DE /* StringExtensions.swift */,
 				076A9D181EEF420800EF258A /* CharacterExtensions.swift */,
 				076A9D161EEF420800EF258A /* DataExtensions.swift */,
 				076A9D171EEF420800EF258A /* IntExtensions.swift */,
@@ -560,6 +566,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07927A041EF2905100B3C47C /* StringExtensions.swift in Sources */,
 				079CCA231EEEF2990057BE54 /* BoolExtensions.swift in Sources */,
 				079CCA2A1EEEF2990057BE54 /* URLExtensions.swift in Sources */,
 				079CCA271EEEF2990057BE54 /* FloatingPointExtensions.swift in Sources */,
@@ -578,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07927A051EF2905100B3C47C /* StringExtensions.swift in Sources */,
 				079CCA2B1EEEF2990057BE54 /* BoolExtensions.swift in Sources */,
 				079CCA321EEEF2990057BE54 /* URLExtensions.swift in Sources */,
 				079CCA2F1EEEF2990057BE54 /* FloatingPointExtensions.swift in Sources */,
@@ -596,6 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07927A071EF2905200B3C47C /* StringExtensions.swift in Sources */,
 				079CCA3B1EEEF29A0057BE54 /* BoolExtensions.swift in Sources */,
 				079CCA421EEEF29A0057BE54 /* URLExtensions.swift in Sources */,
 				079CCA3F1EEEF29A0057BE54 /* FloatingPointExtensions.swift in Sources */,
@@ -614,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07927A061EF2905200B3C47C /* StringExtensions.swift in Sources */,
 				079CCA331EEEF2990057BE54 /* BoolExtensions.swift in Sources */,
 				079CCA3A1EEEF2990057BE54 /* URLExtensions.swift in Sources */,
 				079CCA371EEEF2990057BE54 /* FloatingPointExtensions.swift in Sources */,
