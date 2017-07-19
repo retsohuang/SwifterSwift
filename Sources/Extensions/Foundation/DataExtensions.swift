@@ -24,11 +24,6 @@ public extension Data {
 			NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue], documentAttributes: nil)
 	}
 	
-	/// SwifterSwift: Return data as an array of bytes.
-	public var bytes: [UInt8] {
-		//http://stackoverflow.com/questions/38097710/swift-3-changes-for-getbytes-method
-		return [UInt8](self)
-	}
 }
 
 // MARK: - Methods
